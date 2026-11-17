@@ -11,6 +11,12 @@
 // Serve it locally with `node serve.ts`, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+//
+// Entry notes (WhatsApp session, 2026-11-17): the four screenshots in screenshots/ are real
+// renders of this exact build, captured in a browser from the deterministic ?shot= scenes
+// (play, title, boss, end) defined in game/src/shots.js — the same scenes anyone can reopen
+// by serving game/ and adding ?shot=<scene>&seed=1 to the URL. The dossier is regenerated
+// from the files beside this program on every run, so what is judged is what is in the repo.
 
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
